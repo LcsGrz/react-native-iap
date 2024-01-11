@@ -63,7 +63,6 @@
   "scripts": {
     "prepare": "bob build && npm run clean:plugin && npm run build:plugin",
     "release": "release-it",
-    "example": "yarn --cwd IapExample",
     "test": "jest",
     "lint": "yarn lint:tsc && yarn lint:eslint && yarn lint:prettier",
     "lint:tsc": "tsc -p tsconfig.json --noEmit --skipLibCheck",
@@ -72,7 +71,7 @@
     "lint:prettier": "prettier --write \"**/*.{md,js,jsx,ts,tsx}\"",
     "lint:swift": "swiftlint lint --fix --format --path ios/*.swift --config .swiftlint.yml",
     "format": "git ls-files -m | xargs yarn prettier --write --ignore-unknown --no-error-on-unmatched-pattern",
-    "bootstrap": "yarn example && yarn && yarn example pods",
+    "bootstrap": "yarn",
     "gen:doc": "typedoc",
     "build:plugin": "tsc --build plugin",
     "clean:plugin": "expo-module clean plugin",

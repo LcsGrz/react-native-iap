@@ -1,7 +1,6 @@
 {
   "include": [
     "package.json",
-    "docs/package.json",
-    "IapExample/package.json"
+    "docs/package.json"
   ]
 }
