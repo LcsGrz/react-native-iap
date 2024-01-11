@@ -12,11 +12,6 @@ on:
       - '*.json'
       - '*.js'
       - '*.lock'
-      - 'IapExample/src/**'
-      - 'IapExample/*.json'
-      - 'IapExample/*.js'
-      - 'IapExample/*.lock'
-      - 'IapExample/*.tsx'
       - .github/**
 
   pull_request:
@@ -30,11 +25,6 @@ on:
       - '*.json'
       - '*.js'
       - '*.lock'
-      - 'IapExample/src/**'
-      - 'IapExample/*.json'
-      - 'IapExample/*.js'
-      - 'IapExample/*.lock'
-      - 'IapExample/*.tsx'
       - .github/**
 
 jobs:
@@ -56,9 +46,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Install node_modules for `IapExample/`
-        run: yarn install --immutable
-        working-directory: IapExample
 
       - name: Run TypeScript
         run: |
